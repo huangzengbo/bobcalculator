@@ -1,0 +1,146 @@
+﻿
+input{
+    outline:none!important;
+}
+hr{
+    border:none;
+    height:1px;
+    width:100%;
+    border-bottom:1px solid #cccccc;
+    margin:5px 0;
+}
+.grey-dot-line{
+    border:none;
+    height:1px;
+    width:100%;
+    background:transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAABCAYAAAAW/mTzAAAAFUlEQVQIW2NkgIJt27b99/LyYgRxASauBAJxaCdSAAAAAElFTkSuQmCC') 0 0 repeat-x;
+}
+
+input,textarea{
+    -webkit-appearance: none;
+    border-radius: 0;
+    &:focus{
+        border:none;
+        outline:none;
+    }
+}
+
+h1{
+    font-size: 20px;
+    color: #000;
+    .narrow-font;
+}
+
+h2{
+    font-size: 18px;
+    color: #000;
+    .narrow-font;
+}
+
+h3{
+    font-size: 16px;
+    color: #000;
+    .narrow-font;
+}
+
+h4{
+    font-size: 14px;
+    color: #000;
+    .narrow-font;
+}
+
+h5{
+    font-size: 12px;
+    color: #000;
+    .narrow-font;
+}
+
+a{
+    .transition;
+    color: #396a01;
+    &:hover{
+        color: #589117;
+    }
+}
+
+.content-wrap {
+    clear: both;
+    max-width:1024px;
+    .content-title {
+        .gradient(#ffffff,#dddddd);
+        width: 100%;
+        float: left;
+        .box-sizing;
+        padding: 0 10px;
+        h1 {
+            text-transform: none;
+            font-size: 20px;
+            color: #000;
+            .narrow-font;
+            float: left;
+            width: 50%;
+            line-height: 36px;
+
+            @media screen and (max-width: 800px) {
+                width: 100%;
+                font-size: 16px;
+            }
+
+            @media screen and (max-width: 600px) {
+                font-size: 18px;
+            }
+
+            @media screen and (max-width: 440px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .content-inner {
+        width: 100%;
+        float: left;
+        padding: 10px;
+        .box-sizing;
+    }
+
+    &.content-wrap-border{
+        border:1px solid #ccc;
+    }
+}
+
+.tile{
+    margin-bottom:20px;
+    @media screen and (max-width: 700px) {
+        margin-bottom:10px;
+    }
+    img{
+        max-width:100%;
+    }
+}
+
+.generic-content{
+    h1,h2,h3,h4,h5{
+        margin-bottom:1em;
+        padding-top:0.5em;
+    }
+
+
+    p,pre,code{
+        margin-bottom:0.8em;
+        line-height:140%;
+        font-size:14px;
+        font-family: sans-serif;
+    }
+    ul,ol{
+        margin-bottom:0.4em;
+        li{
+            font-size:14px;
+            margin-left:20px;
+            margin-bottom:0.6em;
+            ul{
+                margin-top:0.6em;
+            }
+        }
+    }
+
+}
