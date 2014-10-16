@@ -7,28 +7,53 @@
     <link rel="stylesheet" href="App_Themes/nomads/css/vendor/default.date.css" id="theme_date" />
     <link rel="stylesheet" href="App_Themes/nomads/css/vendor/default.time.css" id="theme_time" />
     <link type="text/css" href="App_Themes/nomads/css/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/qunit/qunit-1.15.0.css">
     <script type="text/javascript" src="App_Themes/nomads/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
 <body>
 
     <section>
         <div class="wrap">
-            <div class="g6 f767 padding-20">
 
+
+            <div class="g6 f767 padding-20 generic-content">
+                <h1>Bob's Number Calculator</h1>
+                
+                <h3>This is a calculator to calculate type of number.</h3>
+                <hr />
+                <h4>How to use calculator:</h4>
+                <ol>
+                    <li>Input an integer</li>
+                    <li>Click "Generate Number" button</li>
+                    <li>See results in result panel</li>
+                </ol>
+                <hr />
+                <h4>How to run unit test (QUnit):</h4>
+                <ol>
+                    <li>Open Web Dev Tool or Press "F12"</li>
+                    <li>Go to "Console" panel</li>
+                    <li>Enter "App.calculator.testInit()"</li>
+                    <li>Or click <a href="javascript:App.calculator.testInit()">here</a></li>
+                </ol>
+                <hr />
+                <h4>How to run end to end test (AngularJS):</h4>
+                <ol>
+                    <li>Click <a href="/test" rel="external">here</a></li>
+                </ol>
+                <hr />
                 <form id="calculator">
                     <fieldset class="form">
-                        <h1>Bob's Number Calculator</h1>
-                        <div class="height-10"></div>
+
                         <div class="form-field-wrap">
                             <label>Number:</label>
                             <div class="form-field text-field">
-                                <input id="Number" name="Number" type="text" value="" placeholder="Please input your Number" />
+                                <input id="Number" name="Number" type="text" ng-model="number" value="" placeholder="Please input your Number" />
                             </div>
                         </div>
-                        
+
                         <div class="form-field-wrap">
                             <div class="form-field button-field">
-                                <input type="submit" value="Generate Number" name="Submit" id="submit" class="submit disabled" />
+                                <input type="submit" value="Generate Number" name="Submit" ng-model="submit" id="submit" class="submit disabled" />
                             </div>
                         </div>
                     </fieldset>
@@ -51,7 +76,7 @@
                     <div class="height-10"></div>
                     <hr />
                     <div class="height-10"></div>
-                    
+
                     <div class="g3">
                         <h3>Odd:</h3>
                     </div>
@@ -101,7 +126,14 @@
         </div>
     </section>
 
-    <section>
+    <div class="clear"></div>
+
+    <section class="hide js-test-wrap">
+        <h1 id="qunit-header">QUnit Test Suite</h1>
+        <h2 id="qunit-banner"></h2>
+        <div id="qunit-testrunner-toolbar"></div>
+        <h2 id="qunit-userAgent"></h2>
+        <ol id="qunit-tests"></ol>
     </section>
 
     <script type="text/javascript" src="App_Themes/nomads/js/vendor/jquery-1.11.0.min.js"></script>
@@ -112,10 +144,15 @@
     <script type="text/javascript" src="App_Themes/nomads/js/vendor/picker.date.js"></script>
     <script type="text/javascript" src="App_Themes/nomads/js/vendor/picker.time.js"></script>
     <script type="text/javascript" src="App_Themes/nomads/js/vendor/legacy.js"></script>
+
+    <script src="//code.jquery.com/qunit/qunit-1.15.0.js"></script>
+
     <script type="text/javascript" src="App_Themes/nomads/js/app.js"></script>
     <script type="text/javascript" src="App_Themes/nomads/js/modules/form.js"></script>
     <script type="text/javascript" src="App_Themes/nomads/js/modules/validation.js"></script>
+    <script type="text/javascript" src="App_Themes/nomads/js/modules/links.js"></script>
     <script type="text/javascript" src="App_Themes/nomads/js/modules/nomads.js"></script>
+
     <script type="text/javascript" src="App_Themes/nomads/js/main.js"></script>
 
 </body>
