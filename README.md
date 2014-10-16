@@ -17,3 +17,5 @@ How to run unit test (QUnit):
 How to run end to end test (AngularJS):
 
 1. Go to "/test/index.html"
+
+Shortcuts for Unit test and End to End test provided in instruction section when running this calculator
