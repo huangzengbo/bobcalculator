@@ -2,7 +2,7 @@
 
 describe('Bob\'s Number Calculator - End to end test', function () {
     beforeEach(function () {
-        browser().navigateTo('/index.html');
+        browser().navigateTo('../index.html');
     });
 
     it('Input: null', function () {
